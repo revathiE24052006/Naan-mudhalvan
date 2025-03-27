@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Error Message Program</title> 
+	<center>
+	<h1> ERROR PROGRAM </h1>
+	</center>
+	<style>
+		body {
+			font-family: times new roman, sans-serif;
+		}
+		
+		.error-container {
+			width: 500px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color:pink;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.error-message {
+			color: green;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.error-details {
+			color: purple;
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+		
+		.error-code {
+			color: #f00;
+			font-size: 24px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="error-container">
+		<h1>Error Message Program</h1>
+		<div class="error-message">An error occurred!</div>
+		<div class="error-details">Please try again later.</div>
+		<div class="error-code">Error Code: 500</div>
+	</div>
+	
+	<script>
+		var errorMessage = "AN ERROR OCCURRED!";
+		var errorDetails = "Please try again later.";
+		var errorCode = "500";
+		
+		document.querySelector(".error-message").innerHTML = errorMessage;
+		document.querySelector(".error-details").innerHTML = errorDetails;
+		document.querySelector(".error-code").innerHTML = "Error Code: " + errorCode;
+	</script>
+</body>
+</html>
